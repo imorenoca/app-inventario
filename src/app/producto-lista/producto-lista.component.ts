@@ -11,7 +11,7 @@ export class ProductoListaComponent {
   constructor(private productoServicio: ProductoService){
   }
   ngOnInit(){
-    //cargar los productors
+    //cargar los productos
     this.obtenerProductos();
   }
 
