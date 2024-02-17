@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Producto } from './producto';
 
@@ -12,7 +12,7 @@ export class ProductoService {
   constructor(private clienteHttp: HttpClient) {
 
    }
-   obtenerProductosListas(): Observable<Producto []>{
+   obtenerProductosLista(): Observable<Producto []>{
     return this.clienteHttp.get<Producto[]>(this.urlBase);
   }
 }
